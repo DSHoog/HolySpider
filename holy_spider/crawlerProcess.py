@@ -18,7 +18,7 @@ Just change the time.sleep() value to change the duration of the crawl.
 '''
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
-from theHolySpider import TheHolySpider
+from spiders.theHolySpider import TheHolySpider
 
 # Create a CrawlerProcess object
 process = CrawlerProcess(settings=get_project_settings())
