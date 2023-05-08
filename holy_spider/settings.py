@@ -1,10 +1,10 @@
 # settings.py
 
 # Important names for the spider
-BOT_NAME = 'the_holy_spider'
+BOT_NAME = 'holy_spider'
 
-SPIDER_MODULES = ['holySpider.holy_spider_scraper']
-NEWSPIDER_MODULE = 'holySpider.holy_spider_scraper'
+SPIDER_MODULES = ['holy_sider.spiders']
+NEWSPIDER_MODULE = 'holy_sider.spiders'
 
 # ScraOps API Key
 SCRAPEOPS_API_KEY = 'cbe2aba4-0561-45bd-9f9f-a223e227ca02'
