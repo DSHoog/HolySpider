@@ -12,6 +12,17 @@ BOT_NAME = "holy_spider"
 SPIDER_MODULES = ["holy_spider.spiders"]
 NEWSPIDER_MODULE = "holy_spider.spiders"
 
+SCRAPEOPS_API_KEY = 'cbe2aba4-0561-45bd-9f9f-a223e227ca02'
+  
+EXTENSIONS = {
+        'scrapeops_scrapy.extension.ScrapeOpsMonitor': 500, 
+        }
+  
+DOWNLOADER_MIDDLEWARES = {
+        'scrapeops_scrapy.middleware.retry.RetryMiddleware': 550,
+        'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
+        }
+  
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "holy_spider (+http://www.yourdomain.com)"
