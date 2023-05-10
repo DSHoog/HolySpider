@@ -3,7 +3,7 @@ import scrapy
 # scrapy crawl test -o output.json
 
 class MySpider(scrapy.Spider):
-    name = "test"
+    name = "normalspider"
     allowed_domains = ["sacred-texts.com"]
     start_urls = ["https://www.sacred-texts.com/lgbt/index.htm#intro"]
 
