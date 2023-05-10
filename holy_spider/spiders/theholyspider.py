@@ -4,6 +4,7 @@ from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from w3lib.html import remove_tags
 
+
 # scrapy crawl theholyspider -o output.json
 
 class TheholyspiderSpider(CrawlSpider):
